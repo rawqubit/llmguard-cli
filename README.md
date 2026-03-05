@@ -22,34 +22,13 @@ Existing solutions are either too slow (full LLM evaluation of every input) or t
 
 ---
 
+<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/07d50352-9ad8-4e82-874c-ac3ef413ac46" />
+
+
 ## Detection Architecture
 
-```
-User Input
-    │
-    ▼
-┌──────────────────────────────────────────────────────┐
-│  Layer 1: Heuristic Engine (< 1ms)                   │
-│  • 20+ regex signatures for known attack patterns    │
-│  • Covers: DAN, instruction override, role hijacking │
-│  • Covers: data exfiltration, social engineering     │
-└──────────────────────────────────────────────────────┘
-    │
-    ▼ (if heuristic score > 0.4 OR --ai flag)
-┌──────────────────────────────────────────────────────┐
-│  Layer 2: AI Meta-Reasoning (LLM-as-judge)           │
-│  • Sends input to GPT-4.1-mini for contextual review │
-│  • Returns: verdict, confidence, attack technique    │
-│  • Temperature=0.1 for deterministic classification  │
-└──────────────────────────────────────────────────────┘
-    │
-    ▼
-┌──────────────────────────────────────────────────────┐
-│  Verdict Engine                                      │
-│  • Combined score: AI×0.6 + Heuristic×0.4           │
-│  • Actions: allow | log_and_monitor | flag | block   │
-└──────────────────────────────────────────────────────┘
-```
+<img width="2108" height="2048" alt="Gemini_Generated_Image_k6x72k6x72k6x72k" src="https://github.com/user-attachments/assets/54344dcf-c028-447c-b6d8-b0ec6f6bd2c2" />
+
 
 ---
 
