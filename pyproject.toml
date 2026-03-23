@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "llmguard-cli"
+version = "1.2.0"
+description = "Real-time prompt injection and jailbreak detector for LLM pipelines"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Srinikhil Chakilam", email = "4531201+rawqubit@users.noreply.github.com" }]
+keywords = ["llm", "security", "prompt-injection", "jailbreak", "ai-security"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+dependencies = [
+  "openai>=1.0",
+  "click>=8.0",
+  "rich>=13.0",
+  "httpx>=0.25",
+]
+
+[project.scripts]
+llmguard = "main:cli"
+
+[project.urls]
+Homepage = "https://github.com/rawqubit/llmguard-cli"
+Repository = "https://github.com/rawqubit/llmguard-cli"
+"Bug Tracker" = "https://github.com/rawqubit/llmguard-cli/issues"
