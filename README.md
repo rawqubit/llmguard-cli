@@ -3,6 +3,7 @@
 > **Real-time prompt injection and jailbreak detector** for LLM pipelines. Multi-layer detection combining 20+ heuristic signatures with AI meta-reasoning. Ships with an HTTP API for inline pipeline integration.
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![CI](https://github.com/rawqubit/llmguard-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/rawqubit/llmguard-cli/actions/workflows/ci.yml)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4.1-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Security](https://img.shields.io/badge/Category-AI%20Security-purple?style=flat-square)]()
